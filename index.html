@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caio Godoy Batistella · Designer de Produto & Interfaces</title>
+    <meta name="description"
+        content="Portfólio de Caio Godoy Batistella, designer de produto e interfaces especializado em UI/UX, Design Systems e Direção de Arte. Baseado em São Paulo.">
+
+    <!-- Fontes do Google: Syne, Space Grotesk & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Wrapper Principal -->
+    <div class="site-wrapper">
+
+        <!-- ==========================================================================
+             CABEÇALHO FIXO EDITORIAL
+             ========================================================================== -->
+        <header class="site-header">
+            <div class="header-inner">
+                <!-- Marca / Nome -->
+                <a href="#hero" class="brand-link" title="Caio Godoy Batistella — Início">
+                    <img src="assets/images/logo.png" alt="Logo Caio Godoy Batistella" class="site-logo-img">
+                    <div class="brand-text-group">
+                        <span class="brand-name">Caio Godoy</span>
+                        <span class="brand-role">Product Designer</span>
+                    </div>
+                </a>
+
+                <!-- Navegação Principal -->
+                <nav aria-label="Navegação Principal">
+                    <ul class="nav-menu">
+                        <li><a href="#about" class="nav-link">Sobre</a></li>
+                        <li><a href="#services" class="nav-link">Especialidades</a></li>
+                        <li><a href="#projects" class="nav-link">Projetos</a></li>
+                        <li><a href="#contact" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Ações do Cabeçalho -->
+                <div class="header-actions">
+                    <div class="live-status-pill">
+                        <span class="live-dot"></span>
+                        <span>Disponível</span>
+                    </div>
+
+                    <a href="#contact" class="btn-header-cta">
+                        <span>Conversar</span>
+                        <span>↗</span>
+                    </a>
+
+                    <button class="mobile-nav-toggle" type="button" aria-label="Abrir Menu" aria-expanded="false">
+                        MENU
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <!-- ==========================================================================
+                 1. HERO SECTION // APRESENTAÇÃO HUMANA & EDITORIAL
+                 ========================================================================== -->
+            <section id="hero" class="hero-stage-centered">
+                <!-- Topo da Apresentação Centralizada -->
+                <div class="site-container hero-intro-container">
+                    <div class="hero-badge">
+                        <span class="live-dot"></span>
+                        <span>São Paulo, Brasil · Aberto para novos desafios</span>
+                    </div>
+
+                    <h1 class="hero-title-centered">
+                        Caio Godoy Batistella
+                    </h1>
+
+                    <p class="hero-subtitle-centered">
+                        Designer de Produto · Interfaces Digitais · Design Systems
+                    </p>
+                </div>
+
+                <!-- ==========================================================================
+                     PALCO DO PERFIL: FOTO NO CENTRO + FRASES DESLIZANDO ATRÁS (BACKGROUND)
+                     ========================================================================== -->
+                <div class="hero-stage-marquee-area">
+                    <!-- Camada de Frases Deslizando (Z-INDEX: 1) -->
+                    <div class="profile-marquee-layer" aria-hidden="true">
+                        <!-- Trilha 1: Deslizando para a esquerda -->
+                        <div class="profile-marquee-row marquee-row-1 marquee-to-left">
+                            <div class="marquee-content-track">
+                                <span>PRODUCT DESIGNER · UI/UX SPECIALIST · DESIGN SYSTEMS · EXPERIÊNCIA DO USUÁRIO ·</span>
+                                <span>PRODUCT DESIGNER · UI/UX SPECIALIST · DESIGN SYSTEMS · EXPERIÊNCIA DO USUÁRIO ·</span>
+                                <span>PRODUCT DESIGNER · UI/UX SPECIALIST · DESIGN SYSTEMS · EXPERIÊNCIA DO USUÁRIO ·</span>
+                                <span>PRODUCT DESIGNER · UI/UX SPECIALIST · DESIGN SYSTEMS · EXPERIÊNCIA DO USUÁRIO ·</span>
+                            </div>
+                        </div>
+
+                        <!-- Trilha 2: Deslizando para a direita -->
+                        <div class="profile-marquee-row marquee-row-2 marquee-to-right">
+                            <div class="marquee-content-track">
+                                <span>DESIGN DE INTERFACES · DIREÇÃO DE ARTE · BRANDING & IDENTIDADE · MOTION & CRAFT ·</span>
+                                <span>DESIGN DE INTERFACES · DIREÇÃO DE ARTE · BRANDING & IDENTIDADE · MOTION & CRAFT ·</span>
+                                <span>DESIGN DE INTERFACES · DIREÇÃO DE ARTE · BRANDING & IDENTIDADE · MOTION & CRAFT ·</span>
+                                <span>DESIGN DE INTERFACES · DIREÇÃO DE ARTE · BRANDING & IDENTIDADE · MOTION & CRAFT ·</span>
+                            </div>
+                        </div>
+
+                        <!-- Trilha 3: Deslizando para a esquerda -->
+                        <div class="profile-marquee-row marquee-row-3 marquee-to-left">
+                            <div class="marquee-content-track">
+                                <span>ARQUITETURA DE INFORMAÇÃO · DESIGN OPS · PROTOTIPAGEM INTERATIVA · USABILIDADE ·</span>
+                                <span>ARQUITETURA DE INFORMAÇÃO · DESIGN OPS · PROTOTIPAGEM INTERATIVA · USABILIDADE ·</span>
+                                <span>ARQUITETURA DE INFORMAÇÃO · DESIGN OPS · PROTOTIPAGEM INTERATIVA · USABILIDADE ·</span>
+                                <span>ARQUITETURA DE INFORMAÇÃO · DESIGN OPS · PROTOTIPAGEM INTERATIVA · USABILIDADE ·</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FOTO CENTRALIZADA SOBREPOSTA ÀS FRASES (Z-INDEX: 2) -->
+                    <div class="hero-center-portrait-anchor">
+                        <div class="hero-portrait-card">
+                            <img src="assets/images/profile.jpg" alt="Foto de perfil de Caio Godoy Batistella"
+                                class="hero-portrait-img" fetchpriority="high">
+                            <div class="hero-portrait-caption">
+                                <span class="portrait-name">Caio Godoy Batistella</span>
+                                <span class="portrait-role">São Paulo · Brasil</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Base do Hero: Posicionamento, Ações e Métricas -->
+                <div class="site-container hero-bottom-container">
+                    <p class="hero-statement-text">
+                        Transformo problemas complexos em interfaces intuitivas, belas e funcionais. 
+                        Uno pensamento estratégico centrado nas pessoas, consistência de sistemas escaláveis e 
+                        atenção meticulosa aos detalhes visuais e de interação.
+                    </p>
+
+                    <div class="hero-actions-centered">
+                        <a href="#projects" class="btn-primary">
+                            <span>Ver Projetos Selecionados</span>
+                            <span>↓</span>
+                        </a>
+                        <a href="#contact" class="btn-secondary">
+                            <span>Entrar em Contato</span>
+                            <span>↗</span>
+                        </a>
+                    </div>
+
+                    <!-- Métricas Reais do Designer -->
+                    <div class="hero-metrics-centered">
+                        <div class="metric-item">
+                            <span class="metric-value">+5 Anos</span>
+                            <span class="metric-label">Praticando design e produto digital</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">+40</span>
+                            <span class="metric-label">Projetos entregues com sucesso</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-value">WCAG AAA</span>
+                            <span class="metric-label">Padrão rigoroso de acessibilidade</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================================================================
+                 2. SEÇÃO SOBRE // NARRATIVA & VALORES
+                 ========================================================================== -->
+            <section id="about" class="editorial-section">
+                <div class="site-container">
+                    <span class="section-tagline">01 · SOBRE MIM</span>
+
+                    <h2 class="section-title">
+                        Design não é apenas o que parece, mas como funciona e o que faz as pessoas sentirem.
+                    </h2>
+                    <p class="section-subtitle">
+                        Uma visão prática sobre colaboração, usabilidade e qualidade na construção de produtos digitais.
+                    </p>
+
+                    <div class="about-grid">
+                        <div class="about-editorial-prose">
+                            <p>
+                                Sou designer multidisciplinar baseado em São Paulo, com mais de 5 anos dedicados à concepção 
+                                e ao refinamento de <strong>produtos digitais</strong>, <strong>design systems multimarca</strong> 
+                                e <strong>identidades visuais contemporâneas</strong>.
+                            </p>
+                            <p>
+                                Minha abordagem combina pesquisa de usuário empática com forte rigor de execução visual. 
+                                Acredito que uma grande interface deve ser invisível quando necessário e memorável quando 
+                                relevante: facilitando a vida de quem a usa e gerando resultados sustentáveis para o negócio.
+                            </p>
+                            <p>
+                                Trabalho próximo a desenvolvedores e gestores de produto, garantindo que o handoff 
+                                ocorra com documentação viva, tokens semânticos e conformidade estrita com padrões 
+                                internacionais de acessibilidade (WCAG).
+                            </p>
+                        </div>
+
+                        <!-- Ficha Técnica -->
+                        <div class="spec-box">
+                            <div class="spec-item">
+                                <span class="spec-label">Localização</span>
+                                <span class="spec-value">São Paulo, Brasil (UTC-3)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Foco de Atuação</span>
+                                <span class="spec-value">Product Design, UI/UX & Design Systems</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Ferramentas Principais</span>
+                                <span class="spec-value">Figma, Tokens Studio, Protopie, Notion</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Status Atual</span>
+                                <span class="spec-value" style="color: #34d399;">● Aberto para projetos selecionados</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 Princípios de Design -->
+                    <div class="principles-grid">
+                        <div class="principle-card">
+                            <div class="principle-num">01</div>
+                            <h3 class="principle-title">Pessoas em Primeiro Lugar</h3>
+                            <p class="principle-desc">
+                                Cada decisão visual parte de uma necessidade real do usuário. Interfaces intuitivas reduzem a carga cognitiva e geram confiança imediata.
+                            </p>
+                        </div>
+
+                        <div class="principle-card">
+                            <div class="principle-num">02</div>
+                            <h3 class="principle-title">Consistência & Escala</h3>
+                            <p class="principle-desc">
+                                Construo ecossistemas modulares de componentes e tokens que permitem que produtos cresçam com coesão, agilidade e economia de esforço técnico.
+                            </p>
+                        </div>
+
+                        <div class="principle-card">
+                            <div class="principle-num">03</div>
+                            <h3 class="principle-title">Craft & Atenção ao Detalhe</h3>
+                            <p class="principle-desc">
+                                Tipografia precisa, contrastes calibrados e microinterações elegantes elevam um produto comum a uma experiência notável e polida.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================================================================
+                 3. SEÇÃO ESPECIALIDADES & SERVIÇOS
+                 ========================================================================== -->
+            <section id="services" class="editorial-section">
+                <div class="site-container">
+                    <span class="section-tagline">02 · ESPECIALIDADES</span>
+                    <h2 class="section-title">Como posso contribuir no seu time ou projeto</h2>
+                    <p class="section-subtitle">
+                        Disciplinas consolidadas para tirar ideias do papel ou levar produtos existentes ao próximo nível de maturidade.
+                    </p>
+
+                    <div class="services-grid">
+                        <!-- Card 01 -->
+                        <div class="service-card">
+                            <div>
+                                <div class="service-card-header">
+                                    <span class="service-index">DISCIPLINA 01</span>
+                                </div>
+                                <h3 class="service-title">Product Design (UI & UX)</h3>
+                                <p class="service-desc">
+                                    Criação de jornadas fluidas, fluxos de navegação, arquitetura de informação e telas de alta fidelidade para plataformas web e aplicativos móveis.
+                                </p>
+                            </div>
+                            <div class="service-tags-wrap">
+                                <span class="service-tag">Pesquisa de Usuário</span>
+                                <span class="service-tag">Wireframing</span>
+                                <span class="service-tag">Protótipos Interativos</span>
+                                <span class="service-tag">Testes de Usabilidade</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 02 -->
+                        <div class="service-card">
+                            <div>
+                                <div class="service-card-header">
+                                    <span class="service-index">DISCIPLINA 02</span>
+                                </div>
+                                <h3 class="service-title">Design Systems & Tokens</h3>
+                                <p class="service-desc">
+                                    Arquitetura de bibliotecas escaláveis de componentes no Figma, sincronizadas com repositórios de código via tokens semânticos e documentação para devs.
+                                </p>
+                            </div>
+                            <div class="service-tags-wrap">
+                                <span class="service-tag">Tokens Semânticos</span>
+                                <span class="service-tag">Componentes Atômicos</span>
+                                <span class="service-tag">Acessibilidade WCAG</span>
+                                <span class="service-tag">Design Ops</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 03 -->
+                        <div class="service-card">
+                            <div>
+                                <div class="service-card-header">
+                                    <span class="service-index">DISCIPLINA 03</span>
+                                </div>
+                                <h3 class="service-title">Branding & Direção de Arte</h3>
+                                <p class="service-desc">
+                                    Identidades visuais autênticas que transmitem a essência do negócio através de tipografia personalizada, diretrizes de marca, paletas cromáticas e embalagens.
+                                </p>
+                            </div>
+                            <div class="service-tags-wrap">
+                                <span class="service-tag">Identidade Visual</span>
+                                <span class="service-tag">Brand Guidelines</span>
+                                <span class="service-tag">Direção Tipográfica</span>
+                                <span class="service-tag">Design Editorial</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 04 -->
+                        <div class="service-card">
+                            <div>
+                                <div class="service-card-header">
+                                    <span class="service-index">DISCIPLINA 04</span>
+                                </div>
+                                <h3 class="service-title">Motion & Interações Vivas</h3>
+                                <p class="service-desc">
+                                    Comportamento dinâmico de interfaces, microinterações responsivas ao toque do usuário, transições de tela e protótipos de alta fidelidade funcional.
+                                </p>
+                            </div>
+                            <div class="service-tags-wrap">
+                                <span class="service-tag">Microinterações</span>
+                                <span class="service-tag">Transições Fluidas</span>
+                                <span class="service-tag">Prototipagem Rápida</span>
+                                <span class="service-tag">Handoff de Motion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================================================================
+                 4. SEÇÃO PROJETOS SELECIONADOS // TRABALHOS
+                 ========================================================================== -->
+            <section id="projects" class="editorial-section">
+                <div class="site-container">
+                    <span class="section-tagline">03 · PROJETOS SELECIONADOS</span>
+
+                    <div class="projects-header-bar">
+                        <div>
+                            <h2 class="section-title" style="margin-bottom: 0.5rem;">Estudos de Caso & Trabalhos Recentes</h2>
+                            <p class="section-subtitle">
+                                Uma seleção de projetos com desafios reais de produto, sistemas e identidade.
+                            </p>
+                        </div>
+
+                        <!-- Filtros -->
+                        <div class="projects-filter-bar">
+                            <button class="filter-btn active" type="button" data-filter="all">Todos</button>
+                            <button class="filter-btn" type="button" data-filter="systems">Design Systems</button>
+                            <button class="filter-btn" type="button" data-filter="mobile">Mobile & Apps</button>
+                            <button class="filter-btn" type="button" data-filter="creative">Branding & Arte</button>
+                            <button class="filter-btn" type="button" data-filter="experimental">Editorial</button>
+                        </div>
+                    </div>
+
+                    <!-- Grade de Projetos -->
+                    <div class="projects-grid">
+                        <!-- CASE 01: LUMINA DESIGN SYSTEM -->
+                        <article class="project-card" data-category="systems">
+                            <div class="project-card-header">
+                                <span>Design System · 2026</span>
+                                <span class="project-status-badge">Case de Destaque</span>
+                            </div>
+
+                            <div class="project-preview-box">
+                                <img src="assets/images/project-lumina.png" alt="Lumina — Design System Corporativo"
+                                    class="project-preview-img" loading="lazy">
+                            </div>
+
+                            <div class="project-card-body">
+                                <h3 class="project-title">Lumina — Design System Corporativo</h3>
+                                <p class="project-desc">
+                                    Ecossistema completo de componentes e tokens de design desenvolvido para unificar múltiplos produtos digitais, garantindo consistência visual, rapidez no desenvolvimento e acessibilidade.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag tag-accent">Design System</span>
+                                    <span class="project-tag">Figma Tokens</span>
+                                    <span class="project-tag">WCAG AAA</span>
+                                    <span class="project-tag">Design Ops</span>
+                                </div>
+
+                                <div class="project-action-row">
+                                    <button type="button" class="open-spec-btn" data-project-id="proj-01">
+                                        <span>Ver Detalhes do Projeto</span>
+                                        <span>↗</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- CASE 02: AURA SPATIAL EXPERIENCE -->
+                        <article class="project-card" data-category="creative">
+                            <div class="project-card-header">
+                                <span>Direção de Arte · 2026</span>
+                                <span class="project-status-badge">Design Award</span>
+                            </div>
+
+                            <div class="project-preview-box">
+                                <img src="assets/images/project-aura.png" alt="Aura — Identidade & Interface Sonora"
+                                    class="project-preview-img" loading="lazy">
+                            </div>
+
+                            <div class="project-card-body">
+                                <h3 class="project-title">Aura — Identidade & Interface Sonora</h3>
+                                <p class="project-desc">
+                                    Direção de arte e conceituação de interface para áudio espacial. Uma exploração onde harmônicos e frequências acústicas se traduzem em contraste cromático e formas visuais responsivas.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag tag-accent">Direção de Arte</span>
+                                    <span class="project-tag">UI Sensorial</span>
+                                    <span class="project-tag">Motion</span>
+                                    <span class="project-tag">Branding</span>
+                                </div>
+
+                                <div class="project-action-row">
+                                    <button type="button" class="open-spec-btn" data-project-id="proj-02">
+                                        <span>Ver Detalhes do Projeto</span>
+                                        <span>↗</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- CASE 03: NEXUS BANKING APP -->
+                        <article class="project-card" data-category="mobile">
+                            <div class="project-card-header">
+                                <span>Mobile Fintech · 2025</span>
+                                <span class="project-status-badge">App iOS & Android</span>
+                            </div>
+
+                            <div class="project-preview-box">
+                                <img src="assets/images/project-nexus.png" alt="Nexus — App Mobile Bancário"
+                                    class="project-preview-img" loading="lazy">
+                            </div>
+
+                            <div class="project-card-body">
+                                <h3 class="project-title">Nexus — App Mobile Bancário</h3>
+                                <p class="project-desc">
+                                    Redesign de experiência para fintech digital com foco na simplificação de transferências recorrentes, clareza no extrato financeiro e autonomia dos usuários.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag tag-accent">Mobile UI</span>
+                                    <span class="project-tag">UX Research</span>
+                                    <span class="project-tag">Fintech</span>
+                                    <span class="project-tag">Prototipagem</span>
+                                </div>
+
+                                <div class="project-action-row">
+                                    <button type="button" class="open-spec-btn" data-project-id="proj-03">
+                                        <span>Ver Detalhes do Projeto</span>
+                                        <span>↗</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- CASE 04: KINETIC EDITORIAL -->
+                        <article class="project-card" data-category="experimental">
+                            <div class="project-card-header">
+                                <span>Design Editorial · 2025</span>
+                                <span class="project-status-badge">Exposição de Arte</span>
+                            </div>
+
+                            <div class="project-preview-box">
+                                <img src="assets/images/project-kinetic.png" alt="Kinetic — Identidade Visual & Tipografia"
+                                    class="project-preview-img" loading="lazy">
+                            </div>
+
+                            <div class="project-card-body">
+                                <h3 class="project-title">Kinetic — Identidade Visual & Tipografia</h3>
+                                <p class="project-desc">
+                                    Sistema de identidade e catálogo editorial para bienal de design contemporâneo, combinando tipografia autoral, grids flexíveis e peças impressas de grande escala.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag tag-accent">Design Editorial</span>
+                                    <span class="project-tag">Tipografia</span>
+                                    <span class="project-tag">Cartazes</span>
+                                    <span class="project-tag">Print Craft</span>
+                                </div>
+
+                                <div class="project-action-row">
+                                    <button type="button" class="open-spec-btn" data-project-id="proj-04">
+                                        <span>Ver Detalhes do Projeto</span>
+                                        <span>↗</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- CASE 05: HYPERDRIVE AUTOMOTIVE HMI -->
+                        <article class="project-card" data-category="systems">
+                            <div class="project-card-header">
+                                <span>Interface Automotiva · 2025</span>
+                                <span class="project-status-badge">Cockpit Digital</span>
+                            </div>
+
+                            <div class="project-preview-box" style="display: flex; align-items: center; justify-content: center; background: #101217;">
+                                <svg class="project-preview-svg" viewBox="0 0 600 340" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" style="max-height: 280px; width: 100%;">
+                                    <rect width="100%" height="100%" fill="#101217" />
+                                    <circle cx="200" cy="170" r="54" stroke="#e2a03f" stroke-width="4"
+                                        stroke-dasharray="190 360" fill="none" />
+                                    <text x="182" y="176" fill="#f8fafc" font-family="Space Grotesk, sans-serif"
+                                        font-size="22" font-weight="700">104</text>
+                                    <circle cx="400" cy="170" r="54" stroke="#10B981" stroke-width="4"
+                                        stroke-dasharray="230 360" fill="none" />
+                                    <text x="382" y="176" fill="#f8fafc" font-family="Space Grotesk, sans-serif"
+                                        font-size="22" font-weight="700">82%</text>
+                                    <text x="215" y="240" fill="#64748b" font-family="Space Grotesk, sans-serif"
+                                        font-size="11" letter-spacing="1">HMI ERGONOMIA VISUAL COGNITIVA</text>
+                                </svg>
+                            </div>
+
+                            <div class="project-card-body">
+                                <h3 class="project-title">Hyperdrive — Interface Digital Automotiva</h3>
+                                <p class="project-desc">
+                                    Design de telas centrais e clusters digitais para veículos elétricos, priorizando legibilidade rápida em menos de 0.3 segundos, ergonomia sob luz solar e segurança ao volante.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag tag-accent">HMI Design</span>
+                                    <span class="project-tag">Cockpit Digital</span>
+                                    <span class="project-tag">Ergonomia</span>
+                                    <span class="project-tag">Design System</span>
+                                </div>
+
+                                <div class="project-action-row">
+                                    <button type="button" class="open-spec-btn" data-project-id="proj-05">
+                                        <span>Ver Detalhes do Projeto</span>
+                                        <span>↗</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- CASE 06: STRATA SUSTAINABLE LUXURY -->
+                        <article class="project-card" data-category="creative">
+                            <div class="project-card-header">
+                                <span>Branding & Embalagens · 2024</span>
+                                <span class="project-status-badge">Identidade Visual</span>
+                            </div>
+
+                            <div class="project-preview-box">
+                                <img src="assets/images/project-strata.png" alt="Strata — Branding & Embalagens Sustentáveis"
+                                    class="project-preview-img" loading="lazy">
+                            </div>
+
+                            <div class="project-card-body">
+                                <h3 class="project-title">Strata — Branding & Embalagens Sustentáveis</h3>
+                                <p class="project-desc">
+                                    Posicionamento de marca e design estrutural de embalagens táteis em papéis reciclados para linha consciente de cosméticos, unindo requinte estético à regeneração ecológica.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag tag-accent">Branding</span>
+                                    <span class="project-tag">Embalagens</span>
+                                    <span class="project-tag">E-Commerce</span>
+                                    <span class="project-tag">Direção de Arte</span>
+                                </div>
+
+                                <div class="project-action-row">
+                                    <button type="button" class="open-spec-btn" data-project-id="proj-06">
+                                        <span>Ver Detalhes do Projeto</span>
+                                        <span>↗</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================================================================
+                 5. SEÇÃO CONTATO // ACOLHEDORA & DIRETA
+                 ========================================================================== -->
+            <section id="contact" class="contact-section">
+                <div class="site-container">
+                    <span class="section-tagline">04 · CONTATO</span>
+
+                    <div class="contact-layout">
+                        <!-- Bloco de E-mail e Informações -->
+                        <div class="contact-intro-card">
+                            <h2 class="contact-headline">Vamos criar algo memorável juntos?</h2>
+                            <p class="contact-text">
+                                Se você tem um novo produto em mente, precisa estruturar um Design System 
+                                ou procura liderança em design para seu time, entre em contato direto. 
+                                Costumo responder mensagens em até 24 horas.
+                            </p>
+
+                            <!-- Caixa para Copiar E-mail -->
+                            <div class="email-copy-box">
+                                <div>
+                                    <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 2px;">E-mail Direto</div>
+                                    <a href="mailto:caio.batistella.design@gmail.com" class="email-address">
+                                        caio.batistella.design@gmail.com
+                                    </a>
+                                </div>
+                                <button type="button" class="btn-copy-email" title="Copiar endereço de e-mail">
+                                    Copiar E-mail
+                                </button>
+                            </div>
+
+                            <!-- Redes Sociais Limpas -->
+                            <div class="contact-social-strip">
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                                    LinkedIn ↗
+                                </a>
+                                <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-link">
+                                    Behance ↗
+                                </a>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                                    GitHub ↗
+                                </a>
+                                <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                                    Dribbble ↗
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Formulário de Mensagem -->
+                        <div class="contact-form-card">
+                            <form class="contact-form" autocomplete="off">
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+                                    <div class="form-group">
+                                        <label for="nome" class="form-label">Seu Nome *</label>
+                                        <input type="text" id="nome" name="nome" class="form-input"
+                                            placeholder="Ex: Lucas Mendes" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Seu E-mail *</label>
+                                        <input type="email" id="email" name="email" class="form-input"
+                                            placeholder="lucas@empresa.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="assunto" class="form-label">Objetivo do Projeto *</label>
+                                    <select id="assunto" name="assunto" class="form-select" required>
+                                        <option value="uiux">Design de Produto / UI & UX Completo</option>
+                                        <option value="design-system">Construção ou Evolução de Design System</option>
+                                        <option value="branding">Identidade Visual & Direção de Arte</option>
+                                        <option value="consultoria">Consultoria ou Outro Desafio Criativo</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="mensagem" class="form-label">Mensagem *</label>
+                                    <textarea id="mensagem" name="mensagem" class="form-textarea" maxlength="500"
+                                        placeholder="Conte um pouco sobre o projeto, contexto ou prazos estimados..."
+                                        required></textarea>
+                                </div>
+
+                                <div class="form-footer-action">
+                                    <span class="char-counter">0 / 500</span>
+                                    <button type="submit" class="btn-primary">
+                                        <span>Enviar Mensagem</span>
+                                        <span>→</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Rodapé Sóbrio -->
+                    <footer class="site-footer">
+                        <div class="footer-copy">
+                            © 2026 <strong>Caio Godoy Batistella</strong> — Todos os direitos reservados.
+                        </div>
+
+                        <div class="footer-clock">
+                            <span>São Paulo, BR:</span>
+                            <strong class="live-clock-target" style="color: var(--text-primary);">--:--:--</strong>
+                        </div>
+
+                        <div>
+                            Design de Produto & Interfaces
+                        </div>
+                    </footer>
+                </div>
+            </section>
+        </main>
+
+        <!-- ==========================================================================
+             MODAL DE ESTUDO DE CASO DO PROJETO
+             ========================================================================== -->
+        <div class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="modal-content-panel">
+                <button class="modal-close-btn" type="button" aria-label="Fechar janela">✕</button>
+                <div class="modal-header">
+                    <div class="modal-proj-serial"></div>
+                    <h3 class="modal-title modal-proj-title"></h3>
+                    <p class="modal-proj-desc"></p>
+                </div>
+
+                <div class="modal-body">
+                    <div>
+                        <div class="modal-section-title">Decisões & Processo de Design</div>
+                        <ul class="modal-proj-arch"></ul>
+                    </div>
+
+                    <div>
+                        <div class="modal-section-title">Ferramentas & Metodologia</div>
+                        <div class="modal-proj-stack"></div>
+                    </div>
+
+                    <div>
+                        <div class="modal-section-title">Resultados & Impacto</div>
+                        <div class="modal-proj-metrics"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts Modulares em JavaScript Puro -->
+    <script src="js/transitions.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

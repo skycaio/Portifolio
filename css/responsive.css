@@ -1,0 +1,197 @@
+/* ==========================================================================
+   RESPONSIVIDADE & ADAPTAÇÕES DE DISPOSITIVOS // DESIGN EDITORIAL
+   Caio Godoy Batistella — Product & Interface Designer
+   ========================================================================== */
+
+/* Telas Grandes e Laptops (1024px para baixo) */
+@media (max-width: 1024px) {
+  .hero-stage-marquee-area {
+    min-height: 480px;
+  }
+
+  .hero-center-portrait-anchor {
+    width: 290px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .principles-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/* Tablets e Smartphones Maiores (860px para baixo) */
+@media (max-width: 860px) {
+  :root {
+    --header-height: 72px;
+  }
+
+  .header-inner {
+    padding: 0 1.5rem;
+  }
+
+  .site-container {
+    padding: 0 1.5rem;
+  }
+
+  .editorial-section {
+    padding: 5rem 0;
+  }
+
+  /* Palco do Hero Centralizado */
+  .hero-stage-centered {
+    padding-top: calc(var(--header-height) + 2.5rem);
+    padding-bottom: 4.5rem;
+  }
+
+  .hero-stage-marquee-area {
+    min-height: 420px;
+    margin: 1rem 0 2rem;
+  }
+
+  .hero-center-portrait-anchor {
+    width: 250px;
+  }
+
+  .marquee-content-track {
+    font-size: clamp(1.8rem, 6vw, 3rem);
+    gap: 1.5rem;
+  }
+
+  .hero-metrics-centered {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  /* Menu Mobile */
+  .nav-menu {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    background: #0d0e12;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+    gap: 1.75rem;
+    border-top: 1px solid var(--border-subtle);
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform var(--transition-normal), opacity var(--transition-fast);
+    z-index: 999;
+  }
+
+  .nav-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .btn-header-cta {
+    display: none;
+  }
+
+  .live-status-pill {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.72rem;
+  }
+
+  /* Grid de Projetos */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .projects-header-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .modal-content-panel {
+    padding: 1.75rem;
+  }
+
+  .modal-proj-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Smartphones Pequenos (480px para baixo) */
+@media (max-width: 480px) {
+  .hero-title-centered {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle-centered {
+    font-size: 1.05rem;
+  }
+
+  .hero-stage-marquee-area {
+    min-height: 350px;
+  }
+
+  .hero-center-portrait-anchor {
+    width: 210px;
+  }
+
+  .hero-actions-centered {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+    width: 100%;
+  }
+
+  .hero-actions-centered .btn-primary,
+  .hero-actions-centered .btn-secondary {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contact-intro-card,
+  .contact-form-card {
+    padding: 1.75rem;
+  }
+
+  .email-copy-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-copy-email {
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
