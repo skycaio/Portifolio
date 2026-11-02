@@ -7,48 +7,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  /* ==========================================================================
-      PALETA DE CORES — EDITORIAL CONTEMPORARY (DARK SLATE & WARM ACCENTS)
-      Equilíbrio entre tons escuros aveludados, tipografia de alta legibilidade
-      e toques acolhedores de âmbar e terracota.
-      ========================================================================== */
-  --bg-body: #0d0e12;
-  --bg-surface: #14161c;
-  --bg-surface-elevated: #1a1d24;
-  --bg-card: rgba(22, 25, 32, 0.75);
-  --bg-card-hover: rgba(28, 32, 42, 0.95);
+  --bg-body: #071a2b;
+  --bg-surface: #0d2239;
+  --bg-surface-elevated: #112d46;
+  --bg-card: rgba(15, 32, 52, 0.8);
+  --bg-card-hover: rgba(20, 39, 62, 0.95);
   --bg-tag: rgba(255, 255, 255, 0.05);
 
-  /* Tons de Texto & Tipografia */
   --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
-  --text-dim: #475569;
+  --text-secondary: #b9d0eb;
+  --text-muted: #8ca7c9;
+  --text-dim: #7090b8;
 
-  /* Cores de Destaque Sofisticadas (Acentos Naturais) */
-  --accent-primary: #e2a03f;       /* Âmbar quente / dourado sutil */
-  --accent-primary-hover: #f59e0b;
-  --accent-subtle: rgba(226, 160, 63, 0.12);
-  --accent-blue: #38bdf8;          /* Azul céu suave para links/detalhes */
-  --accent-green: #10b981;         /* Verde natural para status disponível */
+  --accent-primary: #7dd3fc;
+  --accent-primary-hover: #38bdf8;
+  --accent-subtle: rgba(125, 211, 252, 0.14);
+  --accent-blue: #7dd3fc;
+  --accent-green: #34d399;
 
-  /* Bordas Suaves e Delicadas */
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-light: rgba(255, 255, 255, 0.14);
-  --border-focus: rgba(226, 160, 63, 0.5);
+  --border-subtle: rgba(148, 163, 184, 0.18);
+  --border-light: rgba(148, 163, 184, 0.26);
+  --border-focus: rgba(125, 211, 252, 0.5);
 
-  /* Sombras Orgânicas e Táteis */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
   --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.35);
   --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.5);
-  --shadow-portrait: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  --shadow-portrait: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.08);
 
-  /* Famílias Tipográficas */
   --font-display: 'Nunito', sans-serif;
   --font-heading: 'Nunito', sans-serif;
   --font-sans: 'Nunito', system-ui, -apple-system, sans-serif;
 
-  /* Dimensões & Curvas de Transição */
   --container-max: 1240px;
   --header-height: 80px;
   --radius-sm: 8px;
@@ -61,7 +50,6 @@
   --transition-normal: 0.28s var(--ease-natural);
 }
 
-/* Reset Universal */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -89,13 +77,11 @@ body {
   cursor: default;
 }
 
-/* Seleção de Texto Estilizada */
 ::selection {
   background-color: var(--accent-primary);
-  color: #0b0c0e;
+  color: #071a2b;
 }
 
-/* Container Estrutural */
 .site-wrapper {
   position: relative;
   z-index: 1;
@@ -111,7 +97,6 @@ body {
   padding: 0 2rem;
 }
 
-/* Elementos Utilitários */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -124,7 +109,6 @@ body {
   border-width: 0;
 }
 
-/* Tipografia de Seção */
 .section-tagline {
   display: inline-flex;
   align-items: center;
@@ -170,7 +154,6 @@ body {
   position: relative;
 }
 
-/* Animações Sutis Nativas */
 @keyframes fadeIn {
   from {
     opacity: 0;
