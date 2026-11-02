@@ -1,17 +1,17 @@
 /* ==========================================================================
-   PORTFÓLIO AUTORAL // CAIO GODOY BATISTELLA — PRODUCT & INTERACTION DESIGNER
-   Direção de Arte: Editorial Craft, Tipografia Contemporânea & Design Centrado nas Pessoas
-   Design autêntico, limpo e humanizado — sem clichês de IA ou efeitos artificiais.
-   ========================================================================== */
+    PORTFÓLIO AUTORAL // CAIO GODOY BATISTELLA — PRODUCT & INTERACTION DESIGNER
+    Direção de Arte: Editorial Craft, Tipografia Contemporânea & Design Centrado nas Pessoas
+    Design autêntico, limpo e humanizado — sem clichês de IA ou efeitos artificiais.
+    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
   /* ==========================================================================
-     PALETA DE CORES — EDITORIAL CONTEMPORARY (DARK SLATE & WARM ACCENTS)
-     Equilíbrio entre tons escuros aveludados, tipografia de alta legibilidade
-     e toques acolhedores de âmbar e terracota.
-     ========================================================================== */
+      PALETA DE CORES — EDITORIAL CONTEMPORARY (DARK SLATE & WARM ACCENTS)
+      Equilíbrio entre tons escuros aveludados, tipografia de alta legibilidade
+      e toques acolhedores de âmbar e terracota.
+      ========================================================================== */
   --bg-body: #0d0e12;
   --bg-surface: #14161c;
   --bg-surface-elevated: #1a1d24;
@@ -44,9 +44,9 @@
   --shadow-portrait: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.1);
 
   /* Famílias Tipográficas */
-  --font-display: 'Syne', sans-serif;
-  --font-heading: 'Space Grotesk', -apple-system, sans-serif;
-  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Nunito', sans-serif;
+  --font-heading: 'Nunito', sans-serif;
+  --font-sans: 'Nunito', system-ui, -apple-system, sans-serif;
 
   /* Dimensões & Curvas de Transição */
   --container-max: 1240px;
